@@ -7,11 +7,16 @@ function showError() {
 }
 
 export function fetchUsers(gender) {
+	const loadingIconNode = document.getElementById("loading-icon");
+	loadingIconNode.classList.remove("hidden");
+
 	axios
 		.get(
 			`https://randomuser.me/api/?results=${MAX_RESULTS}&gender=${gender}&inc=name,email,picture`
 		)
 		.then(function(response) {
+			loadingIconNode.classList.add("hidden");
+
 			const data = response.data;
 			if (data.results) {
 				const users = formatUserData(data.results);
@@ -25,6 +30,7 @@ export function fetchUsers(gender) {
 		})
 		.catch(function(error) {
 			console.log(error);
+			loadingIconNode.classList.add("hidden");
 			showError();
 		});
 }

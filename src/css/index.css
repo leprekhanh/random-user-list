@@ -22,6 +22,15 @@ body {
 	padding: 6px;
 }
 
+.loading-icon-container {
+	margin: 12px;
+}
+
+.loading-icon {
+	width: 30px;
+	height: 30px;
+}
+
 .user-list {
 	display: flex;
 	flex-wrap: wrap;
