@@ -9,17 +9,24 @@ body {
 	display: none;
 }
 
-.instructions {
+h1 {
 	font-size: 1.25rem;
-	margin: 24px 0 12px 0;
+	font-weight: normal;
+	margin: 12px 0;
 }
 
 .primary-button {
 	border-radius: 5px;
+	border-style: solid;
+	border: 1px solid gray;
 	font-size: 1.125rem;
 	margin: 0 6px;
 	min-width: 80px;
 	padding: 6px;
+}
+
+.primary-button:hover {
+	cursor: pointer;
 }
 
 .loading-icon-container {
