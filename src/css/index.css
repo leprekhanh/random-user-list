@@ -1,0 +1,57 @@
+body {
+	font-size: 16px;
+	margin: auto;
+	max-width: 1200px;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.instructions {
+	font-size: 1.25rem;
+	margin: 24px 0 12px 0;
+}
+
+.primary-button {
+	border-radius: 5px;
+	font-size: 1.125rem;
+	margin: 0 6px;
+	min-width: 80px;
+	padding: 6px;
+}
+
+.user-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 12px 0 0 0;
+	max-width: 1200px;
+	padding: 0;
+}
+
+.user {
+	box-sizing: border-box;
+	flex: 1 0 100%;
+	list-style-type: none;
+	padding: 12px;
+}
+
+.user-image {
+	object-fit: cover;
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	margin-bottom: 6px;
+}
+
+.user-name {
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+	.user {
+		flex: 1 0 33%;
+	}
+}

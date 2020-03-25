@@ -1,0 +1,15 @@
+{
+	"name": "random-user-list",
+	"version": "1.0.0",
+	"author": "Khanh Hoang",
+	"license": "ISC",
+	"description": "A simple app that allows generation of a random list of users",
+	"main": "index.html",
+	"type": "module",
+	"scripts": {
+		"start": "http-server ./src"
+	},
+	"dependencies": {
+		"http-server": "^0.12.1"
+	}
+}
